@@ -42,7 +42,11 @@ int main(int argc, char *argv[])
 		count++;
 	}
 
+	//close file
+	inputFile.close();
+
 	cout << readvect[count-1] << endl;
+	cout << atof(readvect[count-1].substr(2, (readvect[count-1].size()-2)).c_str())/1000  << endl;
 
 	if(argc > 1){
 		if(string(argv[1]) == "s") cout<<"The Status of the light is: "<<b.status()<<endl;
