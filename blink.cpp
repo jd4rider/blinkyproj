@@ -1,9 +1,13 @@
 #include <wiringPi.h>
 #include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
 
 using namespace std;
 
 const int LED1 = 0;
+const string TEMPFILE = "/sys/bus/w1/devices/28-0000075e82b5/w1_slave";
 
 class Light {
 	public:
@@ -16,19 +20,41 @@ class Light {
 
 int main(int argc, char *argv[])
 {
-Light b;
-//b.blink182(4);
-//cout<<argv[1]<<endl;
 
-if(argc > 1){
-	if(string(argv[1]) == "s") cout<<"The Status of the light is: "<<b.status()<<endl;
-	else if(string(argv[1]) == "o") b.turnon();
-	else if(string(argv[1]) == "f") b.turnoff();
-	else if(string(argv[1]) == "b") b.blink182(2);
-}
+	//instantiate new Light Object
+	Light b;
+
+	//declare variables
+	vector<string> readvect;
+	string read;
+	int count = 0;
+
+	//declare file input stream
+	ifstream inputFile;
+	
+	//open temp file
+	inputFile.open(TEMPFILE);
+
+	//test till end of the file while putting space seperated values in a vector to read later
+	while (inputFile >> read) {
+		//dynamically push values to the vector
+		readvect.push_back(read);
+		count++;
+	}
+
+	cout << readvect[count-1] << endl;
+
+	if(argc > 1){
+		if(string(argv[1]) == "s") cout<<"The Status of the light is: "<<b.status()<<endl;
+		else if(string(argv[1]) == "o") b.turnon();
+		else if(string(argv[1]) == "f") b.turnoff();
+		else if(string(argv[1]) == "b") b.blink182(2);
+	}
+
+	
 
 
-return 0;
+	return 0;
 }
 
 Light::Light(void){
