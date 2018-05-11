@@ -1,3 +1,11 @@
+/*********************
+	Jonathan Forrider
+	CSCI 113
+	05/11/2018
+	Blinky Project - Final
+
+	Description:  Program for the Raspberry Pi so it can perform some functions.
+*********************/
 #include <wiringPi.h>
 #include <iostream>
 #include <fstream>
