@@ -5,7 +5,7 @@ var funstuff = '';
 var proj = '';
 var titleembelish = '';
 
-if(location.pathname == '/website/index.html') {ind = 'active'; titleembelish = ''; }
+if(location.pathname == '/website/index.php') {ind = 'active'; titleembelish = ''; }
 else if(location.pathname == '/website/about.html') {abt = 'active'; titleembelish = ' - About';} 
 else if(location.pathname == '/website/contact.html') {cont = 'active'; titleembelish = ' - Contact';}
 else if(location.pathname == '/website/guessthestory.html') {funstuff = 'active'; titleembelish = ' - FunStuff';}
@@ -22,7 +22,7 @@ jumbotronhtml = `
 navbarhtml = `
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><img class="grow" src="images/me.jpeg" width=auto height="32"></a>
+      <a class="navbar-brand" href="index.php"><img class="grow" src="images/me.jpeg" width=auto height="32"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -30,7 +30,7 @@ navbarhtml = `
       <div class="collapse navbar-collapse" id="navbarsExample07">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item `+ind+`" >
-            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item `+abt+`">
             <a class="nav-link" href="about.html">About</a>
