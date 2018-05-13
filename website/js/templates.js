@@ -144,7 +144,7 @@ contactformhtml = `
 $("navbar").html(navbarhtml);
 $("contactform").html(contactformhtml);
 $("jumbotron").html(jumbotronhtml);
-$("projects").html(projectshtml);
+//$("projects").html(projectshtml);
 
 function telephoneCheck(str) {
   //var x = document.getElementById('phone').value;

@@ -1,19 +1,8 @@
-<!--<html>
-<body>
-------------------------------------
-  HTML form with radio selections 
-  and Submit button. 
-  Upon click executes php script
--------------------------------------- 
-<h2>Control Menu:</h2>
-<dd><input type="radio" name="GPIOcontrol" value="s">Check Status</dd>
-<dd><input type="radio" name="GPIOcontrol" value="o">Turn Light On</dd>
-<dd><input type="radio" name="GPIOcontrol" value="b">Blink Light</dd>
-<p>
-<input type="submit" name="submit" value="submit">
-</form>
-</body>
-</html>-->
+<!--
+This code contains contains both the rendered user side html and server side php.
+When a browser hits the /website folder it renders the index.php html code to the 
+browser.
+-->
 
 <html>
     <head>
