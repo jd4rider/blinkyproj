@@ -65,10 +65,6 @@ browser.
 /**************************************
   Server Side php scripting
   Re-posts back to same page
-  Nested conditional comparing radio button values
-  based on response executes appropriate C program
-  and provides user feedback
-  $_POST is array with one element - GPIOcontrol value
 ****************************************/ 
     $input = "";
     $output = "";
