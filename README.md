@@ -88,9 +88,7 @@ Find IP address of RPio
 ifconfig
 ```
 
-x.x.x.x = Public IP address
-
-Navigate to the following where x.x.x.x is Raspberry PI's IP address.
+Navigate to the following where x.x.x.x is Raspberry PI's Public IP address found above. (x.x.x.x = Public IP address)
 
 ```
 http://x.x.x.x/website
