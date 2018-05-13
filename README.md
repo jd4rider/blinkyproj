@@ -90,4 +90,4 @@ x.x.x.x/website
 
 ## Documentation
 
-Documentation like UML and Hardware diagrams are located in the /documentation folder of this project.
+Documentation, like UML and Hardware diagrams, are located in the /documentation folder of this project.
