@@ -82,10 +82,18 @@ Run ./blinky without a flag to get menu.
 
 Try going to the website while on the same network:
 
-Find IP address of RPio
+Find IP address of RPio 
 
 ```
-x.x.x.x/website
+ifconfig
+```
+
+x.x.x.x = Public IP address
+
+Navigate to the following where x.x.x.x is Raspberry PI's IP address.
+
+```
+http://x.x.x.x/website
 ```
 
 ## Documentation
