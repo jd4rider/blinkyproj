@@ -36,7 +36,7 @@ sudo apt-get install mingw-w64
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+A step by step series of examples that tell you how to get a development env running
 
 You need MINGW's G++ to compile blink.cpp.  The PHP API is coded to use ./blinky so the following would need to be executed:
 
@@ -61,7 +61,7 @@ sudo cp -r website /var/www/html/website
 Fix security so website can execute backend C++ code:
 
 ```
-sudo chmod 4755 /var/www/html/website/blink
+sudo chmod 4755 /var/www/html/website/blinky
 ```
 
 You should now be able to test the front end system or run the compiled blink.cpp.
