@@ -74,13 +74,13 @@ browser.
     //echo $input."<br>";
     exec($input, $output);
     if ($_POST["GPIOcontrol"]=="s")
-	   echo "<div class='container'>".$output."</div>";
+	   echo "<div class='container'>".$output[0]."</div>";
 	if ($_POST["GPIOcontrol"]=="o")
 	   echo "<div class='container'>Turn Light On<br></div>";
     if ($_POST["GPIOcontrol"]=="f")
 	   echo "<div class='container'>Turn Light Off<br></div>";
     if ($_POST["GPIOcontrol"]=="t")
-	   echo "<div class='container'>".$output."</div>";
+	   echo "<div class='container'>".$output[0]."</div>";
 	if ($_POST["GPIOcontrol"]=="b"){
 	   echo "<div class='container'>Light Blinked 2 Times<br></div>";	   
 	}
