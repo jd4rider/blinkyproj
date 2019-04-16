@@ -15,7 +15,7 @@
 using namespace std;
 
 const int LED1 = 0;
-const string TEMPFILE = "/sys/bus/w1/devices/28-0000075e82b5/w1_slave";
+const string TEMPFILE = "/sys/bus/w1/devices/28-0000075dd99c/w1_slave";
 
 class Temp {
 	private:
